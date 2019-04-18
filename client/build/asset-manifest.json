@@ -1,11 +1,11 @@
 {
-  "main.js": "/static/js/main.24d24125.chunk.js",
-  "main.js.map": "/static/js/main.24d24125.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.c5541365.js",
-  "runtime~main.js.map": "/static/js/runtime~main.c5541365.js.map",
-  "static/js/2.72d42ca4.chunk.js": "/static/js/2.72d42ca4.chunk.js",
-  "static/js/2.72d42ca4.chunk.js.map": "/static/js/2.72d42ca4.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.40a1b28926c2743110e3b9810d0f1b89.js": "/precache-manifest.40a1b28926c2743110e3b9810d0f1b89.js",
-  "service-worker.js": "/service-worker.js"
+  "main.js": "/remc-portal/client/build/static/js/main.ab9a7e6c.chunk.js",
+  "main.js.map": "/remc-portal/client/build/static/js/main.ab9a7e6c.chunk.js.map",
+  "runtime~main.js": "/remc-portal/client/build/static/js/runtime~main.fac649b8.js",
+  "runtime~main.js.map": "/remc-portal/client/build/static/js/runtime~main.fac649b8.js.map",
+  "static/js/2.6078fc1a.chunk.js": "/remc-portal/client/build/static/js/2.6078fc1a.chunk.js",
+  "static/js/2.6078fc1a.chunk.js.map": "/remc-portal/client/build/static/js/2.6078fc1a.chunk.js.map",
+  "index.html": "/remc-portal/client/build/index.html",
+  "precache-manifest.f790fcaac63401914ab5e4544c44f008.js": "/remc-portal/client/build/precache-manifest.f790fcaac63401914ab5e4544c44f008.js",
+  "service-worker.js": "/remc-portal/client/build/service-worker.js"
 }

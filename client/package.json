@@ -1,6 +1,7 @@
 {
   "name": "remc-client",
   "version": "0.2.0",
+  "homepage": "https://melnikov.dev/remc-portal/client/build",
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.11",
