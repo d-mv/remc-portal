@@ -1,10 +1,12 @@
 import React from "react";
 
-import * as NavButtonStyle from "../styles/NavButton";
+import * as NavButtonStyle from "../styles/NavBarButton";
 
 interface IProps {
   section: string;
   active?: boolean;
+  mobile?: boolean;
+  desktop?: boolean;
   toggle: any;
 }
 
@@ -17,13 +19,19 @@ class NavButton extends React.Component<IProps> {
   render() {
     const { active } = this.props;
     const { section } = this.props;
-
+    const { desktop } = this.props;
     const button = active ? (
-      <NavButtonStyle.Active onClick={this.handleClick}>
+      <NavButtonStyle.Active
+        onClick={event => this.handleClick(event)}
+        desktop={desktop}
+      >
         <span>{section}</span>
       </NavButtonStyle.Active>
     ) : (
-      <NavButtonStyle.NonActive onClick={this.handleClick}>
+      <NavButtonStyle.NonActive
+        onClick={event => this.handleClick(event)}
+        desktop={desktop}
+      >
         {section}
       </NavButtonStyle.NonActive>
     );

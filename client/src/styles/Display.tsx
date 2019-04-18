@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 const Display = styled.section`
-margin: 0 auto;
-width: 100%;
-`
+  margin: 0 auto;
+  width: 100%;
+`;
 
-export default Display
+export default Display;

@@ -1,35 +1,44 @@
 import React from "react";
 
-import NavButton from "../components/NavButton";
-import * as NavBar from "../styles/NavBar";
-
+import NavBarMobile from "./NavBarMobile";
+import NavBarDesktop from "../components/NavBarDesktop";
 interface IProps {
   active: string;
   toggle: any;
 }
-const sections = ["главная", "новости", "документы", "о нас"];
 
-class Navigation extends React.Component<IProps> {
+interface IState {
+  desktop: boolean;
+  sections: Array<string>;
+}
+
+class Navigation extends React.Component<IProps, IState> {
+  state = {
+    sections: ["главная", "новости", "документы", "о нас"],
+    desktop: true
+  };
+  componentWillMount() {
+    if (window.screen.width < 500) {
+      this.setState({
+        desktop: false
+      });
+    }
+  }
   render() {
     const { active } = this.props;
     const { toggle } = this.props;
-    return (
-      <NavBar.Desktop>
-        {sections.map(section => {
-          const button =
-            section === active ? (
-              <NavButton
-                active
-                section={section}
-                key={section}
-                toggle={toggle}
-              />
-            ) : (
-              <NavButton section={section} key={section} toggle={toggle} />
-            );
-          return button;
-        })}
-      </NavBar.Desktop>
+    return this.state.desktop ? (
+      <NavBarDesktop
+        active={active}
+        toggle={toggle}
+        sections={this.state.sections}
+      />
+    ) : (
+      <NavBarMobile
+        active={active}
+        toggle={toggle}
+        sections={this.state.sections}
+      />
     );
   }
 }
