@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/remc-portal/client/build/precache-manifest.f790fcaac63401914ab5e4544c44f008.js"
+  "/remc-portal/client/build/precache-manifest.a37c5a4b2ae0998bc0499c7b3a02467c.js"
 );
 
 workbox.clientsClaim();
